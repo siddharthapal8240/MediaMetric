@@ -53,6 +53,7 @@ def run_flow(message: str, endpoint: str = FLOW_ID, tweaks: dict = TWEAKS) -> di
 
 # Main function for Streamlit
 def main():
+    st.image("assets/images/logo.png", width=200)  # Adjust the width as needed
     st.title("Social Media Performance Analysis")
 
     # Initialize session state for chat history
