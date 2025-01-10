@@ -13,7 +13,7 @@ load_dotenv()
 BASE_API_URL = "https://api.langflow.astra.datastax.com"
 LANGFLOW_ID = "fc56d784-6cf2-495d-860b-a215dd1fead2"
 FLOW_ID = "e36e3f8d-eb1c-4f08-9bad-b471d618d86a"
-APPLICATION_TOKEN = os.getenv("APPLICATION_TOKEN")  # Store your token in .env
+APPLICATION_TOKEN = os.getenv("APP_TOKEN")  # Store your token in .env
 
 # Load the CSV data
 @st.cache_data
