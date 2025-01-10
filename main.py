@@ -173,7 +173,8 @@ def main():
     st.markdown('</div>', unsafe_allow_html=True)
 
 def show_home_page():
-    st.header("Welcome to Social Media Performance Analysis")
+    st.header("Welcome to Media Matrices")
+    st.header("The Social Media Performance Analysis")
     st.write("This application allows you to analyze social media engagement data across different post types.")
     
     col1, col2 = st.columns([2, 1])
