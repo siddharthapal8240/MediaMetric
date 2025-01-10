@@ -280,11 +280,6 @@ def show_about_page():
         st.markdown("AI Specialist")
     
     st.markdown("---")
-    st.subheader("Contact Us")
-    st.write("For more information or support, please reach out to us:")
-    st.markdown("📧 Email: info@supermind-hackathon.com")
-    st.markdown("🌐 Website: www.supermind-hackathon.com")
-    st.markdown("📱 Phone: +1 (123) 456-7890")
 
 if __name__ == "__main__":
     main()
