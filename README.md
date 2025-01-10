@@ -1,7 +1,7 @@
 
-# Media Metric
+# Media Metrics
 
-Media Metric is an AI-powered platform designed to help users analyze and optimize their social media strategies. With engaging visualizations and actionable insights, Media Metric makes it easy to track and enhance performance across various post types.
+Media Metrics is an AI-powered platform designed to help users analyze and optimize their social media strategies. With engaging visualizations and actionable insights, Media Metrics makes it easy to track and enhance performance across various post types.
 
 ## Key Features
 
@@ -24,8 +24,11 @@ cd SuperMind
 # Install required dependencies
 pip install -r requirements.txt
 
-# Create a .env file and add your APP_TOKEN
-echo "APP_TOKEN=your_token_here" > .env
+# Create a .env file
+touch .env
+
+# Add your APP_TOKEN to the .env file
+echo "APP_TOKEN=your_token_here" >> .env
 ```
 
 ## Usage
