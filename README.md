@@ -44,10 +44,10 @@ streamlit run app.py
 
 We thank the following contributors for their hard work and dedication:
 
-- Priyanshu
-- Ronit
-- Riyaz
-- Siddhartha
+- Priyanshu Nayan
+- Ronit Pal
+- Sk Riyaz
+- Siddhartha Pal
 
 ## License
 
