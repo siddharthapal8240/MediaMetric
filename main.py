@@ -264,20 +264,16 @@ def show_about_page():
     col1, col2, col3, col4 = st.columns(4)
     with col1:
         st.image("https://via.placeholder.com/150", caption="Team Member 1")
-        st.markdown("**John Doe**")
-        st.markdown("Data Scientist")
+        st.markdown("**Sk Riyaz**")
     with col2:
         st.image("https://via.placeholder.com/150", caption="Team Member 2")
-        st.markdown("**Jane Smith**")
-        st.markdown("UX Designer")
+        st.markdown("**Priyanshu Nayan**")
     with col3:
         st.image("https://via.placeholder.com/150", caption="Team Member 3")
-        st.markdown("**Mike Johnson**")
-        st.markdown("Full Stack Developer")
+        st.markdown("**Ronit Pal**")
     with col4:
         st.image("https://via.placeholder.com/150", caption="Team Member 4")
-        st.markdown("**Sarah Williams**")
-        st.markdown("AI Specialist")
+        st.markdown("**Siddhartha Pal**")
     
     st.markdown("---")
 
