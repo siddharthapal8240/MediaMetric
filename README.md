@@ -1,7 +1,7 @@
 
-# SuperMind
+# Media Metric
 
-SuperMind is an AI-powered platform designed to help users analyze and optimize their social media strategies. With engaging visualizations and actionable insights, SuperMind makes it easy to track and enhance performance across various post types.
+Media Metric is an AI-powered platform designed to help users analyze and optimize their social media strategies. With engaging visualizations and actionable insights, Media Metric makes it easy to track and enhance performance across various post types.
 
 ## Key Features
 
