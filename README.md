@@ -46,7 +46,13 @@ streamlit run app.py
 - **LangChain**: Powering the AI-driven insights.
 - **DataStax**: Database solutions for efficient data management.
 
- 
+ ## Live project link
+
+ Link : https://mediametrics.streamlit.app/
+
+## Demo Video
+
+Check out the demo video of the project here: https://youtu.be/pBg9ygjHQIY?si=tRPA2m3dMNCVe6O0 
 
 
 ## Project Images
