@@ -89,17 +89,17 @@ def main():
     }
     .fixed-header {
         position: fixed;
-        top: 0;
-        left: 0;
-        right: 0;
-        height: 60px;
-        background-color: #ffffff;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0 20px;
-        box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-        z-index: 1000;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    z-index: 1000;
     }
     .fixed-header h1 {
         margin: 0;
@@ -107,11 +107,13 @@ def main():
     }
     .fixed-header .logos {
         display: flex;
-        align-items: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
     }
     .fixed-header .logos img {
-        height: 40px;
-        margin-left: 10px;
+        height: 60px; /* Adjust logo size as needed */
+    margin: 0 15px; /* Add spacing between logos */
     }
     .content {
         margin-top: 80px;
@@ -145,21 +147,10 @@ def main():
     </style>
     """, unsafe_allow_html=True)
 
-    # Fixed Header
-    st.markdown("""
-    <div class="fixed-header">
-        <h1>Supermind Hackathon</h1>
-        <div class="logos">
-            <img src="https://via.placeholder.com/40" alt="Logo 1">
-            <img src="https://via.placeholder.com/40" alt="Logo 2">
-            <img src="https://via.placeholder.com/40" alt="Logo 3">
-            <img src="https://via.placeholder.com/40" alt="Logo 4">
-        </div>
-    </div>
-    """, unsafe_allow_html=True)
-
+   
     # Content wrapper
     st.markdown('<div class="content">', unsafe_allow_html=True)
+
 
     # Navbar
     st.markdown("""
@@ -200,7 +191,6 @@ def show_home_page():
         st.markdown('<div class="centered-buttons">', unsafe_allow_html=True)
         if st.button("Get Started", key="get_started"):
             st.session_state.page = "Analysis"
-            st.experimental_rerun()
         if st.button("Watch Demo", key="watch_demo", help="Watch a demo of the application"):
             st.markdown("[Watch Demo on YouTube](https://www.youtube.com)", unsafe_allow_html=True)
         st.markdown('</div>', unsafe_allow_html=True)
@@ -251,7 +241,17 @@ def show_analysis_page(df):
     if st.button("Generate Insights", key="generate_insights"):
         with st.spinner("Generating insights..."):
             insights = run_flow(f"Analyze the performance of {post_type} posts based on the following metrics: Average Likes: {metrics['average_likes']:.2f}, Average Shares: {metrics['average_shares']:.2f}, Average Comments: {metrics['average_comments']:.2f}, Average Sentiment: {metrics['average_sentiment']:.2f}")
-            st.info(insights['result'])
+            
+            # Extract the main message (assuming the structure)
+            out = (
+                insights.get("outputs", [{}])[0]  # Get the first item in 'outputs' (default to an empty dict)
+                .get("outputs", [{}])[0]  # Access the first item in the nested 'outputs' list
+                .get("results", {})  # Access the 'results' key (default to an empty dict)
+                .get("message", {})  # Access the 'message' key (default to an empty dict)
+                .get("text", "Message not found")  # Extract the 'text' field
+            )
+            
+            st.info(out)
 
 def show_about_page():
     st.header("About Us")
