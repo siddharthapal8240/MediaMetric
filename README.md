@@ -23,6 +23,9 @@ cd SuperMind
 
 # Install required dependencies
 pip install -r requirements.txt
+
+# Create a .env file and add your APP_TOKEN
+echo "APP_TOKEN=your_token_here" > .env
 ```
 
 ## Usage
@@ -40,6 +43,30 @@ streamlit run app.py
 - **LangChain**: Powering the AI-driven insights.
 - **DataStax**: Database solutions for efficient data management.
 
+
+## Acknowledgments
+
+Special thanks to the development team and all contributors who helped bring this project to life!
+
+## Demo Video
+
+Check out the demo video of the project here:  
+
+
+## Project Images
+
+Below are some images showcasing the project:
+
+## ⌞ ⌝ Screenshots ⌞ ⌝
+
+Here are representations of our platform:
+
+![Image-1](/assets/images/1.jpeg)
+![Image-2](/assets/images/2.jpeg)
+![Image-3](/assets/images/3.jpeg)
+![Image-4](/assets/images/4.jpeg)
+![Image-5](/assets/images/5.jpeg)
+
 ## Contributors
 
 We thank the following contributors for their hard work and dedication:
@@ -49,10 +76,3 @@ We thank the following contributors for their hard work and dedication:
 - Sk Riyaz
 - Siddhartha Pal
 
-## License
-
-This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-Special thanks to the development team and all contributors who helped bring this project to life!
